@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://RigidPlayer.gd" type="Script" id=1]
+[ext_resource path="res://assets/character.png" type="Texture" id=2]
+
+[node name="RigidPlayer" type="RigidBody2D"]
+mass = 10.0
+script = ExtResource( 1 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 14.8355, 84.1021, 62.1736, -19.088, 19.944, -38.5, -13.0905, -44.9706, -50.2117, -21.4719, -25.3507, 56.5167, -0.830292, 68.4363 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0.464478, 0.903091 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 2 )
